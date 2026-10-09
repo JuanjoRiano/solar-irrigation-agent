@@ -1,0 +1,7 @@
+prior,posterior,goal,plan,steps,decision,value
+0.05,0.0673980782719379,espera_registrada + sensores_revisados,Ir a parcela -> Revisar sensores -> Registrar espera,3,posponer,-2.5682435416045903
+0.2,0.25555195643330875,sensores_revisados + solar_programado,Ir a parcela -> Verificar equipo -> Revisar sensores -> Programar solar,4,solar,0.9875319632160906
+0.3146247057877823,0.3866279069767442,sensores_revisados + solar_programado,Ir a parcela -> Verificar equipo -> Revisar sensores -> Programar solar,4,solar,5.597354997090976
+0.4,0.47791735758267406,sensores_revisados + solar_programado,Ir a parcela -> Verificar equipo -> Revisar sensores -> Programar solar,4,solar,8.80792269015948
+0.6,0.6731665694533459,solar_programado,Ir a parcela -> Verificar equipo -> Programar solar,3,solar,15.674661481644197
+0.8,0.8459745464317437,solar_programado,Ir a parcela -> Verificar equipo -> Programar solar,3,solar,21.75216226961949

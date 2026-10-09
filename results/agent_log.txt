@@ -1,0 +1,14 @@
+OBSERVE | fecha=2025-01-24; fuente=NASA POWER; radiación=3.5616 kWh/m2/día; lluvia=0.09 mm/día; temperatura=26.16 C
+EVIDENCE | C(lluvia baja)=1; E(radiación alta)=0
+POSTERIOR | P(ventana meteorológica apta mañana | evidencia)=0.386628
+NOTA | Es un evento derivado de registros ambientales; NO es éxito medido de riego.
+PLAN CANDIDATO solar | meta=['sensores_revisados', 'solar_programado']; pasos=['Ir a parcela', 'Verificar equipo', 'Revisar sensores', 'Programar solar']
+PLAN CANDIDATO respaldo | meta=['respaldo_programado', 'sensores_revisados']; pasos=['Ir a parcela', 'Verificar equipo', 'Revisar sensores', 'Preparar respaldo', 'Programar respaldo']
+PLAN CANDIDATO posponer | meta=['espera_registrada', 'sensores_revisados']; pasos=['Ir a parcela', 'Revisar sensores', 'Registrar espera']
+DECISION | Programar solar; Minimax alpha-beta=5.597355
+PLAN FINAL | Ir a parcela -> Verificar equipo -> Revisar sensores -> Programar solar
+ACCIÓN | Recomendación registrada. No se ha accionado ningún equipo físico.
+VALIDACIÓN | meta satisfecha en ejecución simbólica; Brier 2025=0.172988; base=0.198806
+DATOS | 2192 días; entrenamiento=1826 pares; prueba=364; faltantes=0
+EXPERIMENTOS | 27 filas, 3 escenarios x 3 profundidades x 3 variantes; 31 repeticiones/mediana.
+SENSIBILIDAD | [{"prior": 0.05, "posterior": 0.0673980782719379, "goal": "espera_registrada + sensores_revisados", "plan": "Ir a parcela -> Revisar sensores -> Registrar espera", "steps": 3, "decision": "posponer", "value": -2.5682435416045903}, {"prior": 0.2, "posterior": 0.25555195643330875, "goal": "sensores_revisados + solar_programado", "plan": "Ir a parcela -> Verificar equipo -> Revisar sensores -> Programar solar", "steps": 4, "decision": "solar", "value": 0.9875319632160906}, {"prior": 0.3146247057877823, "posterior": 0.3866279069767442, "goal": "sensores_revisados + solar_programado", "plan": "Ir a parcela -> Verificar equipo -> Revisar sensores -> Programar solar", "steps": 4, "decision": "solar", "value": 5.597354997090976}, {"prior": 0.4, "posterior": 0.47791735758267406, "goal": "sensores_revisados + solar_programado", "plan": "Ir a parcela -> Verificar equipo -> Revisar sensores -> Programar solar", "steps": 4, "decision": "solar", "value": 8.80792269015948}, {"prior": 0.6, "posterior": 0.6731665694533459, "goal": "solar_programado", "plan": "Ir a parcela -> Verificar equipo -> Programar solar", "steps": 3, "decision": "solar", "value": 15.674661481644197}, {"prior": 0.8, "posterior": 0.8459745464317437, "goal": "solar_programado", "plan": "Ir a parcela -> Verificar equipo -> Programar solar", "steps": 3, "decision": "solar", "value": 21.75216226961949}]
