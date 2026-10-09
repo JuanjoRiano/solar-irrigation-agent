@@ -1,1 +1,0 @@
-https://power.larc.nasa.gov/api/temporal/daily/point?parameters=ALLSKY_SFC_SW_DWN%2CPRECTOTCORR%2CT2M&community=RE&longitude=-75.0&latitude=4.2&start=20200101&end=20251231&format=JSON
